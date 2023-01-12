@@ -1,0 +1,24 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.ingredientes {
+  padding: 2rem 2rem 0 2rem;
+  @include m.tablet {
+    @include m.grid(2, 2rem);
+    text-align: left;
+    padding: 0;
+  }
+  .texto {
+    p {
+      margin: 0;
+    }
+  }
+  .imagen {
+    @include m.tablet {
+      margin-left: 5rem;
+    }
+  }
+}
+.contenido-menu {
+  padding-bottom: 0;
+}
